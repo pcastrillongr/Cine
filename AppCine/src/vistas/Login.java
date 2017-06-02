@@ -106,7 +106,7 @@ public class Login {
 		btnboton = new JButton("");
 		
 		
-		btnboton.setBackground(new Color(255, 255, 255));
+		btnboton.setBackground(Color.ORANGE);
 		btnboton.setBorderPainted(false);
 		btnboton.setIcon(new ImageIcon(Login.class.getResource("/Imagenes/Enter-50.png")));
 		btnboton.setForeground(Color.RED);

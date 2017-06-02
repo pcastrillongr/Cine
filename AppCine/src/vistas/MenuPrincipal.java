@@ -7,14 +7,16 @@ import java.awt.Color;
 import javax.swing.JLabel;
 
 import models.Container;
-import models.Entradas;
 import models.Pelicula;
 
 import javax.swing.JButton;
+import javax.sound.sampled.AudioSystem;
+import javax.sound.sampled.Clip;
 import javax.swing.ImageIcon;
 import java.awt.Font;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.io.*;
 
 public class MenuPrincipal {
 	
@@ -27,6 +29,7 @@ public class MenuPrincipal {
 	private JLabel lbltickets;
 	
 	
+	
 
 	
 
@@ -36,12 +39,17 @@ public class MenuPrincipal {
 		
 		frame2 = new JFrame();
 		btncartelera = new JButton("");
+		btncartelera.setBackground(Color.ORANGE);
 		 btntickets = new JButton("");
+		 btntickets.setBackground(Color.ORANGE);
 		 
 		  btncompra = new JButton("");
+		  btncompra.setForeground(Color.ORANGE);
+		  btncompra.setBackground(Color.ORANGE);
 			 lblcartelera = new JLabel("Cartelera");
 			 lblComprarEntradas = new JLabel("Comprar Entradas");
 			 lbltickets = new JLabel("Tu Compra");
+
 		initialize();
 	}
 
@@ -88,14 +96,18 @@ public class MenuPrincipal {
 		
 		
 		btncompra.setIcon(new ImageIcon(MenuPrincipal.class.getResource("/Imagenes/Add Shopping Cart-50.png")));
-		btncompra.setBounds(292, 91, 117, 87);
-		btncompra.setBorderPainted(false);;
+		btncompra.setBounds(292, 107, 117, 59);;
+		btncompra.setBorderPainted(false);
 		frame2.getContentPane().add(btncompra);
 		
 		
 		lbltickets.setFont(new Font("Lucida Calligraphy", Font.BOLD | Font.ITALIC, 13));
 		lbltickets.setBounds(307, 80, 102, 16);
 		frame2.getContentPane().add(lbltickets);
+		
+		
+	
+		
 		frame2.setBounds(100, 100, 450, 300);
 		frame2.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
@@ -125,6 +137,8 @@ public class MenuPrincipal {
 		 		
 		 	}
 		 });
+		
+
 	}
 	
 	private void rellenar() {

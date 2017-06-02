@@ -1,6 +1,7 @@
 package models;
 
-public class Pelicula {
+public class Pelicula 
+{
 	
 	private String titulo;
 	private int duracion;
@@ -57,7 +58,8 @@ public class Pelicula {
 	public void setPrecio(float precio) {
 		this.precio = precio;
 	}
-	
+
+
 
 	
 	

@@ -41,8 +41,10 @@ public class Cartelera {
 		lbltitulo = new JLabel("Titulo:");
 		lblPrecio = new JLabel("Precio:");
 		btnnext = new JButton("");
+		btnnext.setBackground(Color.ORANGE);
 
 		btnprev = new JButton("");
+		btnprev.setBackground(Color.ORANGE);
 
 		it = Container.getCartelera().listIterator();
 		lbltitulo2 = new JLabel("");
@@ -56,6 +58,8 @@ public class Cartelera {
 		lblprecio2.setFont(new Font("Lucida Blackletter", Font.BOLD | Font.ITALIC, 14));
 
 		btnhome = new JButton("");
+		btnhome.setBackground(Color.ORANGE);
+		btnhome.setForeground(Color.ORANGE);
 		frameaux=frame2;
 		
 		initialize();
@@ -124,7 +128,7 @@ public class Cartelera {
 		frame3.getContentPane().add(label);
 
 		btnhome.setIcon(new ImageIcon(Cartelera.class.getResource("/Imagenes/Home-64.png")));
-		btnhome.setBounds(364, 217, 80, 55);
+		btnhome.setBounds(349, 207, 80, 55);
 		btnhome.setBorderPainted(false);
 		frame3.getContentPane().add(btnhome);
 		frame3.setBounds(100, 100, 450, 300);
